@@ -8,11 +8,7 @@ import unittest
 class UntitledTestCase(unittest.TestCase):
     def setUp(self):
         self.wd = webdriver.Firefox()
-        self.wd.implicitly_wait(30)
-        self.base_url = "https://www.google.com/"
-        self.verificationErrors = []
-        self.accept_next_alert = True
-
+        self.wd.implicitly_wait(60)
 
     def test_untitled_test_case(self):
         wd = self.wd
