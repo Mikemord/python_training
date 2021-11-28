@@ -12,13 +12,18 @@ class UntitledTestCase(unittest.TestCase):
 
     def test_untitled_test_case(self):
         wd = self.wd
-        wd.get("http://localhost/addressbook/index.php")
-        wd.find_element_by_name("user").clear()
-        wd.find_element_by_name("user").send_keys("admin")
-        wd.find_element_by_name("pass").clear()
-        wd.find_element_by_name("pass").send_keys("secret")
-        wd.find_element_by_id("LoginForm").submit()
+        self.open_home_page(wd)
+        self.login(wd, username="admin", password="secret")
+        self.create_contact(wd)
+        self.logout(wd)
+
+    def logout(self, wd):
+        wd.find_element_by_link_text("Logout").click()
+
+    def create_contact(self, wd):
+        # init new contact
         wd.find_element_by_link_text("add new").click()
+        # сreate new contact
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
         wd.find_element_by_name("firstname").send_keys(u"Юзер")
@@ -45,10 +50,19 @@ class UntitledTestCase(unittest.TestCase):
         wd.find_element_by_name("byear").click()
         wd.find_element_by_name("byear").clear()
         wd.find_element_by_name("byear").send_keys("1987")
+        # submit contact creation
         wd.find_element_by_name("new_group").click()
-        wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
-        wd.find_element_by_link_text("Logout").click()
-    
+
+    def login(self, wd, username, password):
+        wd.find_element_by_name("user").clear()
+        wd.find_element_by_name("user").send_keys(username)
+        wd.find_element_by_name("pass").clear()
+        wd.find_element_by_name("pass").send_keys(password)
+        wd.find_element_by_id("LoginForm").submit()
+
+    def open_home_page(self, wd):
+        wd.get("http://localhost/addressbook/index.php")
+
     def is_element_present(self, how, what):
         try: self.wd.find_element(by=how, value=what)
         except NoSuchElementException as e: return False
