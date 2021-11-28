@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce924c1e-7426-4fcf-83c4-18969cbaf635" name="Changes" comment="Выделены вспомогательные методы и классы">
+    <list default="true" id="ce924c1e-7426-4fcf-83c4-18969cbaf635" name="Changes" comment="Moving test_add_contact to paycharm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,9 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="215GBxAvD0U1srXbczo0zjZiQ7P" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -126,7 +129,7 @@
       <workItem from="1637302492501" duration="1676000" />
       <workItem from="1637481514229" duration="5606000" />
       <workItem from="1637880931777" duration="8322000" />
-      <workItem from="1638055485352" duration="896000" />
+      <workItem from="1638055485352" duration="3784000" />
     </task>
     <task id="LOCAL-00001" summary="Improved descriptions of repository">
       <created>1637224164383</created>
@@ -170,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637985676858</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Moving test_add_contact to paycharm">
+      <created>1638057431180</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638057431180</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,9 +203,11 @@
     <MESSAGE value="Created PyCharm project" />
     <MESSAGE value="Added test and code optimization" />
     <MESSAGE value="Выделены вспомогательные методы и классы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Выделены вспомогательные методы и классы" />
+    <MESSAGE value="Moving test_add_contact to paycharm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moving test_add_contact to paycharm" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/python_training$.coverage" NAME=" Coverage Results" MODIFIED="1637959458006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_add_contact_py.coverage" NAME="pytest in test_add_contact.py Coverage Results" MODIFIED="1638081786635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_training$.coverage" NAME=" Coverage Results" MODIFIED="1638057223173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
