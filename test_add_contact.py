@@ -63,7 +63,7 @@ class UntitledTestCase(unittest.TestCase):
         wd.find_element_by_name("email").send_keys(contact.email)
         wd.find_element_by_name("bday").click()
         wd.find_element_by_xpath("//option[@value='7']").click()
-        Select(wd.find_element_by_name("bmonth")).select_by_visible_text(contact.month)
+        wd.find_element_by_name("bmonth").click()
         wd.find_element_by_xpath("//option[@value='February']").click()
         wd.find_element_by_name("byear").click()
         wd.find_element_by_name("byear").clear()
