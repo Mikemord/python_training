@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce924c1e-7426-4fcf-83c4-18969cbaf635" name="Changes" comment="Created Class Contact and Refactor">
+    <list default="true" id="ce924c1e-7426-4fcf-83c4-18969cbaf635" name="Changes" comment="Transfer login, logout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_add_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_add_contact.py">
     <configuration name="Python tests for Test_Add_Group.TestAddGroup.test_add_group" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,8 +125,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
+        <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python tests.Python tests in test_add_group.py" />
         <item itemvalue="Python tests.Python tests for Test_Add_Group.TestAddGroup.test_add_group" />
       </list>
@@ -148,7 +148,8 @@
       <workItem from="1637481514229" duration="5606000" />
       <workItem from="1637880931777" duration="8322000" />
       <workItem from="1638055485352" duration="9980000" />
-      <workItem from="1638158024306" duration="970000" />
+      <workItem from="1638158024306" duration="2234000" />
+      <workItem from="1638174000522" duration="1493000" />
     </task>
     <task id="LOCAL-00001" summary="Improved descriptions of repository">
       <created>1637224164383</created>
@@ -248,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638090814246</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Transfer login, logout">
+      <created>1638170064149</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1638170064149</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,11 +286,23 @@
     <MESSAGE value="Code optimization" />
     <MESSAGE value="Refactor" />
     <MESSAGE value="Created Class Contact and Refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Class Contact and Refactor" />
+    <MESSAGE value="Transfer login, logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Transfer login, logout" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_add_group.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_add_group_py.coverage" NAME="pytest in test_add_group.py Coverage Results" MODIFIED="1638158366723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_add_contact_py.coverage" NAME="pytest in test_add_contact.py Coverage Results" MODIFIED="1638090722815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_add_group_py.coverage" NAME="pytest in test_add_group.py Coverage Results" MODIFIED="1638170320592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_training$pytest_in_test_add_contact_py.coverage" NAME="pytest in test_add_contact.py Coverage Results" MODIFIED="1638175413468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_training$.coverage" NAME=" Coverage Results" MODIFIED="1638057223173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

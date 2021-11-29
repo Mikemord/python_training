@@ -19,6 +19,26 @@ class UntitledTestCase(unittest.TestCase):
                             bday="6", month="February", year="1987"))
         self.logout(wd)
 
+    def login(self, wd, username, password):
+        wd.find_element_by_name("user").clear()
+        wd.find_element_by_name("user").send_keys(username)
+        wd.find_element_by_name("pass").clear()
+        wd.find_element_by_name("pass").send_keys(password)
+        wd.find_element_by_id("LoginForm").submit()
+
+    def open_home_page(self, wd):
+        wd.get("http://localhost/addressbook/index.php")
+
+    def is_element_present(self, how, what):
+        try: self.wd.find_element(by=how, value=what)
+        except NoSuchElementException as e: return False
+        return True
+    
+    def is_alert_present(self):
+        try: self.wd.switch_to_alert()
+        except NoAlertPresentException as e: return False
+        return True
+
     def logout(self, wd):
         wd.find_element_by_link_text("Logout").click()
 
@@ -42,35 +62,14 @@ class UntitledTestCase(unittest.TestCase):
         wd.find_element_by_name("email").clear()
         wd.find_element_by_name("email").send_keys(contact.email)
         wd.find_element_by_name("bday").click()
-        Select(wd.find_element_by_name("bday")).select_by_visible_text(contact.bday)
-        wd.find_element_by_xpath("//option[@value='6']").click()
+        wd.find_element_by_xpath("//option[@value='7']").click()
         Select(wd.find_element_by_name("bmonth")).select_by_visible_text(contact.month)
         wd.find_element_by_xpath("//option[@value='February']").click()
         wd.find_element_by_name("byear").click()
         wd.find_element_by_name("byear").clear()
         wd.find_element_by_name("byear").send_keys(contact.year)
         # submit contact creation
-        wd.find_element_by_name("new_group").click()
-
-    def login(self, wd, username, password):
-        wd.find_element_by_name("user").clear()
-        wd.find_element_by_name("user").send_keys(username)
-        wd.find_element_by_name("pass").clear()
-        wd.find_element_by_name("pass").send_keys(password)
-        wd.find_element_by_id("LoginForm").submit()
-
-    def open_home_page(self, wd):
-        wd.get("http://localhost/addressbook/index.php")
-
-    def is_element_present(self, how, what):
-        try: self.wd.find_element(by=how, value=what)
-        except NoSuchElementException as e: return False
-        return True
-    
-    def is_alert_present(self):
-        try: self.wd.switch_to_alert()
-        except NoAlertPresentException as e: return False
-        return True
+        wd.find_element_by_name("submit").click()
     
     def tearDown(self):
         self.wd.quit()
