@@ -15,8 +15,7 @@ class UntitledTestCase(unittest.TestCase):
         wd = self.wd
         self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
-        self.create_contact(wd, Contact(firstname=u"Юзер", lastname=u"Тестовый", address=u"Москва, Кремль", home_phone="111111111", mobile_phone="22222222", email="test@yopmail.com",
-                            bday="6", month="February", year="1987"))
+        self.create_contact(wd, Contact(firstname=u"Юзер", lastname=u"Тестовый", address=u"Москва, Кремль", home_phone="111111111", mobile_phone="22222222", email="test@yopmail.com", year="1987"))
         self.logout(wd)
 
     def login(self, wd, username, password):
@@ -61,10 +60,6 @@ class UntitledTestCase(unittest.TestCase):
         wd.find_element_by_name("email").click()
         wd.find_element_by_name("email").clear()
         wd.find_element_by_name("email").send_keys(contact.email)
-        wd.find_element_by_name("bday").click()
-        wd.find_element_by_xpath("//option[@value='7']").click()
-        wd.find_element_by_name("bmonth").click()
-        wd.find_element_by_xpath("//option[@value='February']").click()
         wd.find_element_by_name("byear").click()
         wd.find_element_by_name("byear").clear()
         wd.find_element_by_name("byear").send_keys(contact.year)
